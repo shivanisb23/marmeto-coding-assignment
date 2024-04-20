@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Mermeto Coding Assesment</title>
+
+  <script type="module" src="/dynamicELements.js" defer></script>
+  <script type="module" src="/main.js" defer></script>
+  <script type="module" src="/dynamicVariants.js" defer></script>
+</head>
+
+<body>
+  <!-- Your code goes here -->
+  <div class="container">
+    <div class="grid-container">
+      <div class="imgs-container">
+        <div class="img-display">
+          <div id="imgShowcase" class="img-showcase">
+            <!-- Images will be dynamically added here using JavaScript -->
+          </div>
+        </div>
+        <div class="img-select">
+          <!-- Thumbnail Images will be dynamically added here using JavaScript -->
+        </div>
+      </div>
+      <div class="product-details">
+        <div class="title-grp">
+          <p id="vendor"></p>
+          <h1 id="product-title"></h1>
+        </div>
+        <hr />
+        <div class="price-grp">
+          <span id="price"></span>
+          <span id="discount">35% off</span>
+          <p id="compare-price"></p>
+        </div>
+        <hr />
+        <div class="color-selector">
+          <h4 class="variant-text">Choose a Color</h4>
+          <div class="color-grp">
+            <!-- Color Selectors will be added dynamically here -->
+          </div>
+        </div>
+        <hr />
+        <div class="size-selector">
+          <h4 class="variant-text">Choose a Size</h4>
+          <div class="size-grp">
+            <!-- Radio buttons will be added dynamically here -->
+          </div>
+        </div>
+        <div class="cta-grp">
+          <div class="qty-input">
+            <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+            <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+            <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+          </div>
+          <button class="add-to-cart" type="button">Add to Cart</button>
+          <div class="message"
+            style="display: none; padding: 10px 20px; background-color: #333; color: #fff; border-radius: 5px; text-align: center; margin-bottom: 10px;">
+            Message Here</div>
+          <!-- This div will display the message -->
+          <hr />
+        </div>
+        <hr />
+        <div class="product-dec">
+          <p id="desc">
+            <!-- description will be added dynamically -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Happy coding 😊 -->
+</body>
+
+</html>
